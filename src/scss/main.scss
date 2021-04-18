@@ -29,6 +29,7 @@ a{
   text-decoration: none;
 }
 .page-body {
+  min-height: calc(100vh - 200px);
 }
 .a-link:hover {
   color: $theme-color;
