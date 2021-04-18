@@ -1,0 +1,153 @@
+$theme-color: rgb(183,32,51);
+$yellow-color: rgb(255,208,108);
+
+
+@mixin clear() {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+@import "component/page-header";
+@import "component/page-footer";
+@import "media/index";
+
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  margin: 0;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 500;
+}
+a{
+  color: #888;
+  text-decoration: none;
+}
+.page-body {
+}
+.a-link:hover {
+  color: $theme-color;
+  font-weight: 600;
+}
+.page-content {
+  position: relative;
+  margin: auto;
+  width: 1140px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-block {
+  padding: 60px 0;
+  .img-part {
+    display: inline-block;
+    width: 640px;
+    img {
+      margin-right: 20px;
+      display: inline-block;
+      width: 200px;
+      height: 400px;
+      box-shadow: 0 2px 12px #ccc;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .text-part {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 400px;
+    .text-title {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 400;
+    }
+    p {
+      margin: 1em 0 0 0;
+      font-size: 22px;
+    }
+  }
+}
+
+.grey-bg {
+  background-color: #eee;
+}
+
+.ewm-block {
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  width: 240px;
+  height: 260px;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  color: #4A4A4A;
+  h3 {
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .img-wrap {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.index-page {
+  .page-header {
+  }
+  .nav-aboutUs {
+    display: block;
+  }
+}
+.about-page {
+  .nav-index {
+    display: block;
+  }
+}
+.about-body {
+  position: relative;
+  padding: 60px 0;
+  min-height: 600px;
+  h3 {
+    margin: 0 0 40px 0;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .about-gzh-ewm {
+    width: 260px;
+    height: auto;
+  }
+  .about-gzh-home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+    height: auto;
+  }
+}
+

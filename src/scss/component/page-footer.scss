@@ -1,0 +1,51 @@
+.page-footer {
+  height: 70px;
+  padding: 20px 0;
+  line-height: 30px;
+  .page-content {
+    @include clear
+  }
+  .left-part {
+    float: left;
+  }
+  .right-part {
+    float: right;
+  }
+  ul {
+    @include clear
+  }
+  li {
+    position: relative;
+    display: block;
+    height: 30px;
+    float: left;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .wechat {
+    background-image: url("/_asset/wechat-n.png");
+    &:hover {
+      background-image: url("/_asset/wechat-a.png");
+      .ewm-block {
+        display: block;
+      }
+    }
+  }
+  .weibo {
+    background-image: url("/_asset/weibo-n.png");
+    &:hover {
+      background-image: url("/_asset/weibo-a.png");
+    }
+  }
+  .ewm-block {
+    top: -270px;
+  }
+}

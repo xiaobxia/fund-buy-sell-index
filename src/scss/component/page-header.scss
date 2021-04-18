@@ -1,0 +1,76 @@
+.page-header {
+  height: 70px;
+  padding: 20px 0;
+  line-height: 30px;
+  width: 100%;
+  ul {
+    @include clear
+  }
+  li {
+    position: relative;
+    display: block;
+    height: 30px;
+    float: left;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .page-content {
+    height: 30px;
+  }
+  .left-part {
+    float: left;
+  }
+  .right-part {
+    float: right;
+  }
+  .logo-wrap {
+    height: 30px;
+    line-height: 30px;
+    color:$theme-color;
+    h1 {
+      margin: 0;
+      display: inline;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .follow-btn {
+    position: relative;
+    top: -5px;
+    border-radius: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $yellow-color;
+    font-size: 16px;
+    cursor: pointer;
+    .ewm-block {
+      top: 50px;
+      left: -120px;
+    }
+    &:hover {
+      .ewm-block {
+        display: block;
+      }
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+}
